@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img, picture, video, canvas, svg, i {
+  display: block;
+  max-width: 100%;
+  -webkit-user-drag: none;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p, h1, h2, h3, h4, h5, h6, li, a {
+  --shadow: rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px var(--shadow);
+}
+p {
+  line-height: 1.6;
+}
+
+input[type='submit']:focus-visible {
+  box-shadow: 0 0 0 3px orange !important;
+}
+
+input[type=checkbox], input[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  margin-inline-end: 10px;
+  cursor: pointer;
+}

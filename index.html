@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main class="main_container">
+    <div class="container">
+          <h1>Contact Us</h1>
+    <form class="form_container">
+      <!-- user name -->
+      <div class="user-name">
+        <div class="first-name">
+          <label for="fn">first name<span class="star">*</span></label>
+          <input aria-decribedby="first-name-error" type="text" name="fn" id="fn">
+        </div>
+        <div class="last-name">
+          <label for="ln">last name<span class="star">*</span></label>
+          <input aria-describedby="last-name-error" type="text" name="ln" id="ln">
+        </div>
+      </div>
+      <!-- user email -->
+      <div class="user-email">
+        <label for="ea">email address<span class="star">*</span></label>
+        <input aria-describedby="email-error" type="email" name="ea" id="ea">
+       </div>
+       <!-- query type -->
+        <div class="query-type">
+          <label>query type<span class="star">*</span></label>
+          <div aria-label="radiogroup" class="radiogroup">
+            <div class="general-enquiry box">
+              <label for="ge"><input aria-describedby="radio-error" type="radio" name="qt" id="ge"><span>General Enquiry</span><span class="star">*</span></label>
+            </div>
+            <div class="support-request box">
+              <label for="sr"><input aria-describedby="radio-error" type="radio" name="qt" id="sr"><span>Support Request</span><span class="star">*</span></label>
+            </div>
+          </div>
+        </div>
+        <!-- message -->
+        <div class="message">
+          <label for="msg">message<span class="star">*</span></label>
+          <textarea aria-describedby="message-error" name="msg" id="msg"></textarea>
+        </div>
+        <!-- Accept terms -->
+        <div class="terms">
+          <div class="terms-input">
+          <label for="at"><input aria-describedby="radio-error" type="checkbox" name="at" id="at">I consent to being contacted by the team<span class="star">*</span></label>
+         </div>
+        </div>
+         <!-- submit -->
+          <input type="submit" value="submit">
+    </form>
+    </div>
+    <!-- notification -->
+     <div class="notification">
+      <h2><img src="assets/images/icon-success-check.svg" alt="">Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+     </div>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

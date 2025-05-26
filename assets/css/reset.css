@@ -23,7 +23,7 @@ p {
   line-height: 1.6;
 }
 
-input[type='submit']:focus-visible {
+button:focus-visible {
   box-shadow: 0 0 0 3px orange !important;
 }
 

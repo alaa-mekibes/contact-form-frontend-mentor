@@ -34,7 +34,7 @@ body {
     accent-color: var(--Green-600-medium);
 }
 
-label {
+label, legend {
     font-size: var(--Label-Size);
     font-weight: var(--FW-400);
     color: var(--Grey-500-medium);
@@ -47,7 +47,7 @@ label .star {
     margin-inline-start: 5px;
 }
 
-input, textarea, box {
+input, textarea, .box, button {
     border: 1px solid var(--Grey-900-darker);
     border-radius: var(--input-radius);
     padding: .5rem;
@@ -55,7 +55,9 @@ input, textarea, box {
     font-size: var(--Label-Size);
     height: 2rem;
 }
-
+fieldset {
+    all: unset;
+}
 /* Start main */
 .main_container {
     position: relative;
@@ -144,7 +146,7 @@ form {
     white-space: pre-wrap;
 }
 
-input[type='submit'] {
+button {
     all: unset;
     text-align: center;
     background-color: var(--Green-600-medium);
@@ -158,7 +160,7 @@ input[type='submit'] {
     transition: var(--transition-02);
 }
 
-input[type='submit']:hover {
+button:hover {
     background-color: var(--Grey-900-darker);
 }
 
@@ -188,7 +190,7 @@ textarea:focus {
     h2 {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: .625rem;
         font-size: 1rem;
         font-weight: var(--FW-700);
         margin-block-end: .5rem;
@@ -207,4 +209,10 @@ textarea:focus {
     100% {
         opacity: 1;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-02: 0s;
+  }
 }

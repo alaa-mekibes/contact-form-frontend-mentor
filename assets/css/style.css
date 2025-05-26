@@ -212,7 +212,8 @@ textarea:focus {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root {
-    --transition-02: 0s;
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }

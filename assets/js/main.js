@@ -43,7 +43,7 @@ class FormVerification {
     }
 
     checker() {
-        document.addEventListener("DOMContentLoaded", _ => {
+        document.addEventListener("DOMContentLoaded", () => {
             this.form.addEventListener("submit", (e) => {
                 e.preventDefault();
                 if(!this.firstName[0].value) {
@@ -97,4 +97,4 @@ class FormVerification {
 }
 
 // main
-input = new FormVerification();
+new FormVerification();
